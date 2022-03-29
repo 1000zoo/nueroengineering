@@ -7,7 +7,7 @@ clear; close all;
 dt=0.1;       % integration time step [ms]
 T=20;         % total simulation time [ms]
 tau_v=1;      % time constant [ms]
-tau_u=2;      % time constant [ms]
+tau_u=1;      % time constant [ms]
 
 %% simulation
 % intial setups
@@ -16,8 +16,8 @@ t_rec=zeros(T/dt+1,1);
 v_rec=zeros(T/dt+1,1);
 u_rec=zeros(T/dt+1,1);
 % initial condition
-v=0;
-u=1;
+v=1;
+u=0;
 % Euler's method
 for t=0:dt:T
     t_step=t_step+1;

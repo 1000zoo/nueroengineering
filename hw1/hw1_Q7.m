@@ -20,10 +20,12 @@ v=0;
 u=1;
 % I_ext
 I_ext=zeros(T/dt+1,1);
-I_ext(10/dt:11/dt)=10;
+I_ext(10/dt:11/dt)=20;
 % Euler's method
 for t=0:dt:T
     t_step=t_step+1;
+    u(v>8.76-0.5)=7.5;
+    v(v>8.76-0.5)=2.5;
     v=v-((v-10)+u-I_ext(t_step))*dt/tau_v;
     u=u-((u-5)-v)*dt/tau_u;
     t_rec(t_step)=t;

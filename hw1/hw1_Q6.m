@@ -30,7 +30,10 @@ for t=0:dt:T
     v_rec(t_step)=v;
     u_rec(t_step)=u;
 end
-
+disp("v_peak")
+max(v_rec)
+disp("u_peak")
+max(u_rec)
 %% Plotting results
 figure(1);clf
 plot(t_rec,v_rec,'b'); hold on;
