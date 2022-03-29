@@ -13,7 +13,6 @@ while(true)
     end
     r_in=[rand;rand];
     if ntrial>2000
-        r_in(1)=r_in(1)+1;
         r_in(2)=r_in(2)+1;
     end
     r=exp(-(c1-r_in(1)).^2-(c2-r_in(2)).^2);

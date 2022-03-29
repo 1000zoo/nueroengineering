@@ -1,4 +1,4 @@
-clear; nn=10; lambda=0.2; sig=2; sig2=1/(2*sig^2);
+clear; nn=10; lambda=0.2; sig=0.1; sig2=1/(2*sig^2);
 [X,Y]=meshgrid(1:nn,1:nn); ntrial=0;
 
 c1=0.5-.1*(2*rand(nn)-1);
