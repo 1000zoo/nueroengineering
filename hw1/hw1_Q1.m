@@ -4,7 +4,7 @@
 clear; close all;
 
 %% parameters of the model
-dt=0.1;       % integration time step [ms]
+dt=0.11;       % integration time step [ms]
 T=20;         % total simulation time [ms]
 tau_v=1;      % time constant [ms]
 tau_u=1;      % time constant [ms]

@@ -20,7 +20,7 @@ v=0;
 u=1;
 % I_ext
 I_ext=zeros(T/dt+1,1);
-I_ext(10/dt:11/dt)=10;
+I_ext(10/dt:12/dt)=10;
 % Euler's method
 for t=0:dt:T
     t_step=t_step+1;
