@@ -116,7 +116,7 @@ end
 
 s=Ci(:,ones(1,N));                      %compute modularity
 Q=~(s-s.').*B/m;
-% Q=sum(Q(:));
+Q=sum(Q(:));
 % Ci_corrected = zeros(N,1);              % DB: initialize Ci_corrected
 % Ci_corrected(n_perm) = Ci;              % DB: return order of nodes to the order used at the input stage.
 % Ci = Ci_corrected;                      % DB: output corrected community assignments
