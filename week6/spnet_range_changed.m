@@ -16,12 +16,13 @@ delays = cell(N,D);
 
 % selecting range
 for_range_1_400 = [1:400, 801:900];
-for_range_401_800 = [401:800, 901:1000];
+for_range_401_800 = [4ㅋ01:800, 901:1000];
 % shuffle range
 idx1 = randperm(500);
 idx2 = randperm(500);
 for_range_1_400(:) = for_range_1_400(idx1);
 for_range_401_800(:) = for_range_401_800(idx2);
+
 
 for i=1:400
     p=randperm(N);

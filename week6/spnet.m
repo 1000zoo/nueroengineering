@@ -2,7 +2,7 @@ clear; clc; close all;
 rand('seed',1);
 % Created by Eugene M.Izhikevich.                February 3, 2004
 % Modified to allow arbitrary delay distributions.  April 16,2008
-M=100;                 % number of synapses per neuron
+M=50;                 % number of synapses per neuron
 D=20;                  % maximal conduction delay 
 % excitatory neurons   % inhibitory neurons      % total number 
 Ne=800;                Ni=200;                   N=Ne+Ni;
@@ -26,7 +26,7 @@ for i=Ne+1:N
     delays{i,1}=1:M;                    % all inh delays are 1 ms.
 end;
 
-s=[6*ones(Ne,M);-5*ones(Ni,M)];         % synaptic weights
+s=[8*ones(Ne,M);-5*ones(Ni,M)];         % synaptic weights
 sd=zeros(N,M);                          % their derivatives
 
 % Make links at postsynaptic targets to the presynaptic weights
